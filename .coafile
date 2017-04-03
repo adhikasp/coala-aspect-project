@@ -1,0 +1,16 @@
+[aspects_based]
+use_aspect = True
+language = All
+files = **
+aspects = LineLength  
+
+[non_aspects_based]
+bears = LineLengthBear
+files = **
+
+[aspects_based.python] 
+# Should target PEP8Bear, 
+# sadly still doesn't work
+language = Python
+files = **.py
+aspects = VariableNaming
